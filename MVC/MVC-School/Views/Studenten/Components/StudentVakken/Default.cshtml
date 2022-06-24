@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MVC_School.Models.VakStudent>
+
+<h4>Vakken</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Vak.Naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vak.Docent)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vak.Naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vak.Docent.Naam)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

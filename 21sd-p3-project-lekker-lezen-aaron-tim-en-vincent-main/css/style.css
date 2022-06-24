@@ -1,0 +1,62 @@
+body {
+    scroll-behavior: smooth;
+    background-image: url("../img/books.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.bookpadding {
+    display: inline-block;
+    margin: 5px 0 0 5px;
+}
+
+.bookcontainer {
+    padding: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+    height: 550px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.bookbox {
+    height: 100%;
+}
+
+.bookcover {
+    width: 100%;
+    height: 85%;
+}
+
+.bookimage {
+    width: 100%;
+    height: 100%;
+}
+
+.bookinfo {
+    display: block;
+}
+
+.bname {
+    font-size: smaller;
+}
+
+.bauthor {
+    display: block;
+    font-size: x-small
+}
+
+.star {
+    height: 10px;
+    width: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

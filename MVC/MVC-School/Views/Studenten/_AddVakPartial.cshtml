@@ -1,0 +1,27 @@
+﻿@model MVC_School.Models.VakStudent
+
+<h4>Voeg een vak toe</h4>
+<div class="row">
+    <div class="col-wd-4">
+        <form asp-action="AddVak">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StudentId" />
+            <div class="form-group">
+                <label asp-for="VakId" class="control-label"></label>
+                <select asp-for="VakId" class="form-control" asp-items="ViewBag.VakId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uren" class="control-label"></label>
+                <input asp-for="Uren" class="form-control" />
+                <span asp-validation-for="Uren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Voeg toe" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptPartial");}
+}
